@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" ;="" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenBSD innovations timeline</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://openbsd-innovations.ctors.net">
+          <img
+            src="./assets/puffy1.gif"
+            alt="Logo"
+            width="30"
+            height="26"
+            class="d-inline-block align-text-top"
+          />
+          OpenBSD innovations timeline
+        </a>
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <li class="nav-item col-6 col-lg-auto">
+            <a
+              class="nav-link py-2 px-0 px-lg-2"
+              href="https://github.com/tvlooy/openbsd-innovations"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                class="navbar-nav-svg"
+                viewBox="0 0 512 499.36"
+                role="img"
+              >
+                <title>GitHub</title>
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="container text-center">
+        <h1 style="margin-bottom: 0;"><b><i style="font-family: serif; color: #0000FF">Open</i><span style="font-family: serif; color: #000084">BSD</span></b> <span style="font-family: serif; color: #E00000">innovations</span></h1>
+        <p>(interpreted) timeline of <a href="https://www.openbsd.org/innovations.html">https://www.openbsd.org/innovations.html</a></p>
+      </div>
+    </header>
+    <section>
+      <div class="timeline container" id="timeline">
+<div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ypbind(8),
+	ypset(8),
+	ypcat(1),
+	ypmatch(1),
+	ypwhich(1),
+	and libc support</h2><time class="date" datetime="1993-01-01T00:00:00Z">1993</time>    <p>
+       Started by Theo de Raadt.
+	Imported April 26, 1993 and first released with NetBSD 0.9.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ypserv(8)</h2><time class="date" datetime="1995-01-01T00:00:00Z">1995</time>    <p>
+      
+	Started by Mats O. Jansson in 1994.
+	Imported October 23, 1995 and first released with OpenBSD 2.0.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 2.0"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd20.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>AnonCVS</h2><time class="date" datetime="1995-01-01T00:00:00Z">1995</time>    <p>
+      
+	Designed and implemented by Chuck Cranor and Theo de Raadt in 1995
+	(paper,
+	slides)
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>issetugid(2)</h2><time class="date" datetime="1996-01-01T00:00:00Z">1996</time>    <p>
+      
+	Theo de Raadt, August 25, 1996, OpenBSD 2.0
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>arc4random(3)</h2><time class="date" datetime="1996-01-01T00:00:00Z">1996</time>    <p>
+      
+	David Mazieres, December 28, 1996, OpenBSD 2.1
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 2.1"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd21.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>mopd(8)</h2><time class="date" datetime="1996-01-01T00:00:00Z">1996</time>    <p>
+      
+	Started by Mats O. Jansson in 1993.
+	Imported September 21, 1996 and first released with OpenBSD 2.0.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ipsec(4)</h2><time class="date" datetime="1997-01-01T00:00:00Z">1997</time>    <p>
+      
+	Started by John Ioannidis, Angelos D. Keromytis, Niels Provos, and
+	Niklas Hallqvist, imported February 20, 1997.  OpenBSD was the first
+	free operating system to provide an IPSec stack.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>bcrypt(3)</h2><time class="date" datetime="1997-01-01T00:00:00Z">1997</time>    <p>
+      
+	Implemented by Niels Provos and David Mazieres
+	Imported February 13, 1997 and first released with OpenBSD 2.1.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>aucat(1)</h2><time class="date" datetime="1997-01-01T00:00:00Z">1997</time>    <p>
+      
+	Started by Kenneth Stailey.
+	Imported January 2, 1997 and first released with OpenBSD 2.1.
+	Now maintained by Alexandre Ratchov.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>strlcpy(3),
+	strlcat(3)</h2><time class="date" datetime="1998-01-01T00:00:00Z">1998</time>    <p>
+      
+	Todd Miller and Theo de Raadt, July 1, 1998, OpenBSD 2.4
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 2.4"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd24.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>inet6(4)</h2><time class="date" datetime="1999-01-01T00:00:00Z">1999</time>    <p>
+      
+	First complete integration and adoption of IPv6 led by
+	"Itojun" (Dr. Junichiro Hagino) [WIDE/KAME], Craig Metz [NRL], and
+	Angelos D. Keromytis starting Jan 6, 1999.
+	Almost fully operational Jun 6, 1999 during the
+	first OpenBSD hackathon.
+	OpenBSD 2.7.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 2.7"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd27.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="1999-01-01T00:00:00Z">1999</time>    <p>
+      OpenSSH
+	including ssh(1),
+	scp(1),
+	sftp(1),
+	ssh-add(1),
+	ssh-agent(1),
+	ssh-keygen(1),
+	sshd(8),
+	sftp-server(8):
+	Started by Aaron Campbell, Bob Beck, Dug Song, Markus Friedl,
+	Niels Provos, and Theo de Raadt
+	as a fork of SSH 1.2.12 by Tatu Ylonen.
+	Imported September 26, 1999 and first released with OpenBSD 2.6.
+	Now maintained by Markus Friedl, Damien Miller, Darren Tucker, and
+	Theo de Raadt.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 2.6"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd26.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>m4(1)</h2><time class="date" datetime="1999-01-01T00:00:00Z">1999</time>    <p>
+      
+	Originally implemented by Ozan Yigit and Richard A. O'Keefe for 4.3BSD-Reno.
+	Considerably extended and maintained by Marc Espie since 1999.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>sudo</h2><time class="date" datetime="1999-01-01T00:00:00Z">1999</time>    <p>
+      
+	Started by Bob Coggeshall and Cliff Spencer around 1980.
+	Imported November 18, 1999, first released with OpenBSD 2.7.
+	Now maintained by Todd Miller.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>mg(1)</h2><time class="date" datetime="2000-01-01T00:00:00Z">2000</time>    <p>
+      
+	Started by Dave Conroy in November 1986.
+	Imported February 25, 2000 and first released with OpenBSD 2.7.
+	Now maintained by Mark Lumsden.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Stack protector</h2><time class="date" datetime="2001-01-01T00:00:00Z">2001</time>    <p>
+      
+	Developed since 2001 as "propolice" by Hiroaki Etoh. Integrated, and
+	implemented for additional hardware platforms, by Miod Vallat and Theo
+	de Raadt.  OpenBSD 3.3 was the first operating system to enable it
+	systemwide by default.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.3"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd33.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>W^X</h2>    <p>
+      
+	First used for sparc, sparc64, alpha, and hppa in OpenBSD 3.3.
+	Strictly enforced by default since OpenBSD 6.0: a program can only
+	violate it if the executable is marked with PT_OPENBSD_WXNEEDED
+	and it is located on a filesystem mounted with the wxallowed
+	mount(8) option.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>GOT and PLT protection by ld.so</h2>    <p>
+      
+	first done as part of the W^X work in OpenBSD 3.3, by Dale Rahn and
+	Theo de Raadt. The GOT and PLT regions are read-only outside of ld.so
+	itself. Extended to the .init/.fini sections (constructors and
+	destructors) in OpenBSD 3.4.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ASLR</h2>    <p>
+      
+	OpenBSD 3.4 was the first widely used operating system to
+	provide it by default.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.4"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd34.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>pf(4),
+	pfctl(8),
+	pflogd(8),
+	authpf(8),
+	ftp-proxy(8)</h2><time class="date" datetime="2001-01-01T00:00:00Z">2001</time>    <p>
+      
+	Started by Daniel Hartmeier as a replacement for the non-free ipf by
+	Darren Reed. Imported June 24, 2001 and first released with OpenBSD
+	3.0. Now maintained by Henning Brauer.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Privilege separation</h2><time class="date" datetime="2002-01-01T00:00:00Z">2002</time>    <p>
+      
+	First implemented by
+	Niels Provos
+	and Markus Friedl in OpenSSH in March 2002, released with OpenBSD 3.2.
+	The concept is now used in many OpenBSD programs, for example
+	bgpd(8),
+	dhclient(8),
+	dhcpd(8),
+	dvmrpd(8),
+	eigrpd(8),
+	file(1),
+	httpd(8),
+	iked(8),
+	ldapd(8),
+	ldpd(8),
+	mountd(8),
+	npppd(8),
+	ntpd(8),
+	ospfd(8),
+	ospf6d(8),
+	pflogd(8),
+	radiusd(8),
+	relayd(8),
+	ripd(8),
+	script(1),
+	smtpd(8),
+	syslogd(8),
+	tcpdump(8),
+	tmux(1),
+	xconsole(1),
+	xdm(1),
+	Xserver(1),
+	ypldap(8),
+	pkg_add(1),
+	etc.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.2"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd32.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Privilege revocation</h2>    <p>
+      
+	Related to the work on privilege separation, some programs were refactored
+	to drop privileges while holding onto a tricky resource such as a raw socket,
+	reserved port, or modification-locked bpf(4) descriptor,
+	for example
+	ping(8),
+	traceroute(8),
+	etc.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>systrace(4),
+	systrace(1)</h2><time class="date" datetime="2002-01-01T00:00:00Z">2002</time>    <p>
+      
+	Started by Niels Provos.
+	Imported June 4, 2002 and first released with OpenBSD 3.2.
+	Deleted after OpenBSD 5.9 because
+	pledge(2) is even better.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>spamd(8)</h2><time class="date" datetime="2002-01-01T00:00:00Z">2002</time>    <p>
+      
+	Written by Bob Beck. Imported December 21, 2002 and first released with
+	OpenBSD 3.3.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>gcc-local(1)
+	__attribute__((__bounded__)) static analysis annotation
+	and checking mechanism</h2><time class="date" datetime="2003-01-01T00:00:00Z">2003</time>    <p>
+      
+	Started by Anil Madhavapeddy on June 26, 2003
+	and ported to GCC 4 by Nicholas Marriott.
+	First released with OpenBSD 3.4.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2>    <p>
+      malloc(3)
+	randomization implemented by Thierry Deval. Guard pages and randomized (delayed) free added by Ted Unangst.
+	Reimplemented by Otto Moerbeek
+	for OpenBSD 4.4.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.4"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd44.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>dc(1)</h2><time class="date" datetime="2003-01-01T00:00:00Z">2003</time>    <p>
+      
+	Written and maintained by Otto Moerbeek.
+	Imported September 19, 2003 and first released with OpenBSD 3.5.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.5"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd35.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>bc(1)</h2><time class="date" datetime="2003-01-01T00:00:00Z">2003</time>    <p>
+      
+	Written and maintained by Otto Moerbeek.
+	Imported September 25, 2003 and first released with OpenBSD 3.5.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>sensorsd(8)</h2><time class="date" datetime="2003-01-01T00:00:00Z">2003</time>    <p>
+      
+	Started by Henning Brauer.
+	Imported September 24, 2003 and first released with OpenBSD 3.5.
+	Reworked by Constantine A. Murenin.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>pkg_add(1)</h2><time class="date" datetime="2003-01-01T00:00:00Z">2003</time>    <p>
+      
+	Written and maintained by Marc Espie.
+	Imported October 16, 2003 and first released with OpenBSD 3.5.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>carp(4)</h2><time class="date" datetime="2003-01-01T00:00:00Z">2003</time>    <p>
+      
+	Written by Mickey Shalayeff, Markus Friedl, Marco Pfatschbacher,
+	and Ryan McBride.
+	Imported October 17, 2003 and first released with OpenBSD 3.5.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>OpenBGPD
+	including bgpd(8)
+	and bgpctl(8)</h2><time class="date" datetime="2003-01-01T00:00:00Z">2003</time>    <p>
+      
+	Written and maintained by Henning Brauer and Claudio Jeker,
+	and also maintained by Peter Hessler.
+	Imported December 17, 2003 and first released with OpenBSD 3.5.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>strtonum(3)</h2><time class="date" datetime="2004-01-01T00:00:00Z">2004</time>    <p>
+      
+	Ted Unangst, Todd Miller, and Theo de Raadt, May 3, 2004, OpenBSD 3.6
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.6"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd36.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>dhclient(8)</h2><time class="date" datetime="2004-01-01T00:00:00Z">2004</time>    <p>
+      
+	Started by Ted Lemon and Elliot Poger in 1996.
+	Imported January 18, 2004 and first released with OpenBSD 3.5.
+	Reworked by Henning Brauer.
+	Now maintained by Kenneth Westerback.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>dhcpd(8)</h2><time class="date" datetime="2004-01-01T00:00:00Z">2004</time>    <p>
+      
+	Started by Ted Lemon in 1995.
+	Imported April 13, 2004 and first released with OpenBSD 3.6.
+	Reworked by Henning Brauer.
+	Now maintained by Kenneth Westerback.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>hotplugd(8)</h2><time class="date" datetime="2004-01-01T00:00:00Z">2004</time>    <p>
+      
+	Started by Alexander Yurchenko.
+	Imported May 30, 2004 and first released with OpenBSD 3.6.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>OpenNTPD
+	including ntpd(8)
+	and ntpctl(8)</h2><time class="date" datetime="2004-01-01T00:00:00Z">2004</time>    <p>
+      
+	Written and maintained by Henning Brauer.
+	Imported May 31, 2004 and first released with OpenBSD 3.6.
+	Portable version maintained by Brent Cook.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ifstated(8)</h2><time class="date" datetime="2004-01-01T00:00:00Z">2004</time>    <p>
+      
+	Started by Marco Pfatschbacher and Ryan McBride.
+	Imported January 23, 2004 and first released with OpenBSD 3.8.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.8"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd38.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ospfd(8),
+	ospfctl(8)</h2><time class="date" datetime="2005-01-01T00:00:00Z">2005</time>    <p>
+      
+	Started by Esben Norby and Claudio Jeker.
+	Imported January 28, 2005 and first released with OpenBSD 3.7.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.7"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd37.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>bioctl(8)</h2><time class="date" datetime="2005-01-01T00:00:00Z">2005</time>    <p>
+      
+	Started by Marco Peereboom.
+	Imported March 29, 2005 and first released with OpenBSD 3.8.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>hostapd(8)</h2><time class="date" datetime="2005-01-01T00:00:00Z">2005</time>    <p>
+      
+	Written by Reyk Flöter.
+	Imported May 26, 2005 and first released with OpenBSD 3.8.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>watchdogd(8)</h2><time class="date" datetime="2005-01-01T00:00:00Z">2005</time>    <p>
+      
+	Started by Marc Balmer.
+	Imported August 8, 2005 and first released with OpenBSD 3.8.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>sdiff(1)</h2><time class="date" datetime="2005-01-01T00:00:00Z">2005</time>    <p>
+      
+	Written by Ray Lai.
+	Imported December 27, 2005 and first released with OpenBSD 3.9.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 3.9"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd39.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>femail</h2><time class="date" datetime="2005-01-01T00:00:00Z">2005</time>    <p>
+      
+	Written and maintained by Henning Brauer.
+	Started in 2005, port available since September 22, 2005.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>midish</h2><time class="date" datetime="2005-01-01T00:00:00Z">2005</time>    <p>
+      
+	Written and maintained by Alexandre Ratchov.
+	Started in 2003, port available since November 4, 2005.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>dvmrpd(8),
+	dvmrpctl(8)</h2><time class="date" datetime="2006-01-01T00:00:00Z">2006</time>    <p>
+      
+	Started by Esben Norby.
+	Imported June 1, 2006 and first released with OpenBSD 4.0.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.0"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd40.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ripd(8),
+	ripctl(8)</h2><time class="date" datetime="2006-01-01T00:00:00Z">2006</time>    <p>
+      
+	Started by Michele Marchetto.
+	Imported October 18, 2006 and first released with OpenBSD 4.1.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.1"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd41.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>pkg-config(1)</h2><time class="date" datetime="2006-01-01T00:00:00Z">2006</time>    <p>
+      
+	Started by Chris Kuethe and Marc Espie.
+	Imported November 27, 2006 and first released with OpenBSD 4.1.
+	Now maintained by Jasper Lievisse Adriaanse.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>relayd(8)
+	with relayctl(8)</h2><time class="date" datetime="2006-01-01T00:00:00Z">2006</time>    <p>
+      
+	Started by Pierre-Yves Ritschard and Reyk Flöter.
+	Imported December 16, 2006 and first released with OpenBSD 4.1.
+	Now maintained by Sebastian Benoit.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>cwm(1)</h2><time class="date" datetime="2007-01-01T00:00:00Z">2007</time>    <p>
+      
+	Started by Marius
+	    Aamodt Eriksen in 2004.
+	Imported April 27, 2007 and first released with OpenBSD 4.2.
+	Now maintained by Okan Demirmen.
+	Portable version
+	maintained by Leah Neukirchen.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.2"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd42.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ospf6d(8),
+	ospf6ctl(8)</h2><time class="date" datetime="2007-01-01T00:00:00Z">2007</time>    <p>
+      
+	Started by Esben Norby and Claudio Jeker.
+	Imported October 8, 2007 and first released with OpenBSD 4.2.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>libtool(1)</h2><time class="date" datetime="2007-01-01T00:00:00Z">2007</time>    <p>
+      
+	Written by Steven Mestdagh and Marc Espie.
+	Imported October 28, 2007 and first available for OpenBSD 4.3.
+	Now maintained by Marc Espie, Jasper Lievisse Adriaanse,
+	and Antoine Jacoutot.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.3"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd43.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>snmpd(8)</h2><time class="date" datetime="2007-01-01T00:00:00Z">2007</time>    <p>
+      
+	Started by Reyk Flöter.
+	Imported December 5, 2007 and first released with OpenBSD 4.3.
+	Now maintained by Martijn van Duren.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>fdm</h2><time class="date" datetime="2007-01-01T00:00:00Z">2007</time>    <p>
+      
+	Written and maintained by Nicholas Marriott.
+	Started in 2006, port available since January 18, 2007.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>sysmerge(8)</h2><time class="date" datetime="2008-01-01T00:00:00Z">2008</time>    <p>
+      
+	Written and maintained by Antoine Jacoutot,
+	originally forked from mergemaster by Douglas Barton.
+	Imported April 22, 2008, first released with OpenBSD 4.4.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ypldap(8)</h2><time class="date" datetime="2008-01-01T00:00:00Z">2008</time>    <p>
+      
+	Started by Pierre-Yves Ritschard.
+	Imported June 26, 2008 and first released with OpenBSD 4.4.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>OpenSMTPD
+	including smtpd(8),
+	smtpctl(8),
+	makemap(8)</h2><time class="date" datetime="2008-01-01T00:00:00Z">2008</time>    <p>
+      
+	Started by Gilles Chehade.
+	Imported November 1, 2008 and first released with OpenBSD 4.6.
+	Now maintained by Gilles Chehade and Eric Faurot.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.6"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd46.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>tmux,
+	tmux(1)</h2><time class="date" datetime="2009-01-01T00:00:00Z">2009</time>    <p>
+      
+	Started in 2007 and maintained by Nicholas Marriott.
+	Imported June 1, 2009, first released with OpenBSD 4.6.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ldpd(8),
+	ldpctl(8)</h2><time class="date" datetime="2009-01-01T00:00:00Z">2009</time>    <p>
+      
+	Started by Michele Marchetto.
+	Imported June 1, 2009 and first released with OpenBSD 4.6.
+	Now maintained by Claudio Jeker.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>mandoc
+	including mandoc(1),
+	man(1),
+	apropos(1),
+	makewhatis(8),
+	man.cgi(8)</h2><time class="date" datetime="2009-01-01T00:00:00Z">2009</time>    <p>
+      
+	Started by Kristaps Dzonsons in November 2008.
+	Imported April 6, 2009, first released with OpenBSD 4.8.
+	Now maintained by Ingo Schwarze.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.8"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd48.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>imsg</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Message passing API, written by Henning Brauer.
+	In libutil since May 26, 2010, OpenBSD 4.8;
+	used by various daemons before that.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>timingsafe_bcmp(3)</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Damien Miller, July 13, 2010, OpenBSD 4.9
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 4.9"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd49.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>dpb(1)</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Started by Nikolay Sturm on August 10, 2004; first available for OpenBSD 3.6.
+	Rewritten and maintained by Marc Espie since August 20, 2010.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ldapd(8),
+	ldapctl(8)</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Written by Martin Hedenfalk.
+	Imported May 31, 2010 and first released with OpenBSD 4.8.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>OpenIKED
+	including iked(8)
+	and ikectl(8)</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Started by Reyk Flöter.
+	Imported June 3, 2010 and first released with OpenBSD 4.8.
+	Now maintained by Tobias Heider.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>iscsid(8),
+	iscsictl(8)</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Written and maintained by Claudio Jeker.
+	Imported September 24, 2010 and first released with OpenBSD 4.9.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>rc.d(8),
+	rc.subr(8)</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Written and maintained by Robert Nagy and Antoine Jacoutot.
+	Imported October 26, 2010 and first released with OpenBSD 4.9.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>npppd(8),
+	npppctl(8)</h2><time class="date" datetime="2010-01-01T00:00:00Z">2010</time>    <p>
+      
+	Started by Internet Initiative Japan Inc.
+	Imported January 11, 2010, first released with OpenBSD 5.3.
+	Maintained by YASUOKA Masahiko.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.3"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd53.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Position-independent executables (PIE)</h2><time class="date" datetime="2012-01-01T00:00:00Z">2012</time>    <p>
+      
+	OpenBSD 5.3 was the first widely used operating system to enable it
+	globally by default, on seven hardware platforms.
+	Implemented in November 2008 by
+	Kurt Miller
+	and enabled by default by
+	Pascal Stumpf
+	in August 2012.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Random-data memory</h2>    <p>
+      
+	the ability to specify that a variable should be initialized
+	at load time with random byte values (placed into a new ELF
+	.openbsd.randomdata section) was implemented in
+	OpenBSD 5.3 by Matthew Dempsky.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Stack protector per shared object</h2>    <p>
+      
+	using the random-data memory feature, each shared object was given its
+	own stack protector cookie in OpenBSD 5.3 by Matthew Dempsky.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Static-PIE</h2>    <p>
+      
+	Position-independent static binaries for /bin, /sbin and ramdisks.
+	Implemented for OpenBSD 5.7 by Kurt Miller and Mark Kettenis.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.7"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd57.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>tftpd(8)</h2><time class="date" datetime="2012-01-01T00:00:00Z">2012</time>    <p>
+      
+	Written and maintained by David Gwynne.
+	Imported March 2, 2012 and first released with OpenBSD 5.2.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.2"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd52.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ldomd(8),
+	ldomctl(8)</h2><time class="date" datetime="2012-01-01T00:00:00Z">2012</time>    <p>
+      
+	Written and maintained by Mark Kettenis.
+	Imported October 26, 2012 and first released with OpenBSD 5.3.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>sndiod(8)</h2><time class="date" datetime="2012-01-01T00:00:00Z">2012</time>    <p>
+      
+	Written and maintained by Alexandre Ratchov.
+	Imported November 23, 2012 and first released with OpenBSD 5.3.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>cu(1)</h2><time class="date" datetime="2012-01-01T00:00:00Z">2012</time>    <p>
+      
+	Written and maintained by Nicholas Marriott.
+	Imported July 10, 2012 and first released with OpenBSD 5.4.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.4"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd54.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>identd(8)</h2><time class="date" datetime="2013-01-01T00:00:00Z">2013</time>    <p>
+      
+	Written and maintained by David Gwynne.
+	Imported March 18, 2013 and first released with OpenBSD 5.4.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>slowcgi(8)</h2><time class="date" datetime="2013-01-01T00:00:00Z">2013</time>    <p>
+      
+	Written and maintained by Florian Obser.
+	Imported May 23, 2013 and first released with OpenBSD 5.4.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>signify(1)</h2><time class="date" datetime="2013-01-01T00:00:00Z">2013</time>    <p>
+      
+	Written and maintained by Ted Unangst.
+	Imported December 31, 2013 and first released with OpenBSD 5.5.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.5"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd55.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>toad</h2><time class="date" datetime="2013-01-01T00:00:00Z">2013</time>    <p>
+      
+	Written and maintained by Antoine Jacoutot.
+	Started in 2013, port available since October 8, 2013.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>explicit_bzero(3)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Ted Unangst and Matthew Dempsky, January 22, 2014, OpenBSD 5.5
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ohash</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Written and maintained by Marc Espie.
+	In libutil since May 12, 2014, OpenBSD 5.6;
+	used by make(1) and m4(1) before that.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.6"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd56.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>asr</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Replacement resolver written and maintained by Eric Faurot.
+	Imported April 14, 2012; activated on March 26, 2014, OpenBSD 5.6.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>reallocarray(3)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Theo de Raadt and Ted Unangst, April 22, 2014, OpenBSD 5.6
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>getentropy(2)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Matthew Dempsky and Theo de Raadt, June 13, 2014, OpenBSD 5.6
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>sendsyslog(2)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Theo de Raadt, July 10, 2014, OpenBSD 5.6
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>timingsafe_memcmp(3)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Matthew Dempsky, July 13, 2014, OpenBSD 5.6
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>htpasswd(1)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Written and maintained by Florian Obser.
+	Imported March 17, 2014 and first released with OpenBSD 5.6.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>LibreSSL</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Started by Ted Unangst, Bob Beck, Joel Sing, Miod Vallat, Philip Guenther,
+	and Theo de Raadt on April 13, 2014, as a fork of OpenSSL 1.0.1g.
+	First released with OpenBSD 5.6.
+	Portable version maintained by Brent Cook.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>httpd(8)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Started by Reyk Flöter.
+	Imported July 12, 2014 and first released with OpenBSD 5.6.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>rcctl(8)</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Written and maintained by Antoine Jacoutot.
+	Imported August 19, 2014 and first released with OpenBSD 5.7.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>docbook2mdoc</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Started by Kristaps Dzonsons in 2014, maintained by Ingo Schwarze.
+	Port available since April 3, 2014.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>portroach</h2><time class="date" datetime="2014-01-01T00:00:00Z">2014</time>    <p>
+      
+	Written and maintained by Jasper Lievisse Adriaanse,
+	originally forked from FreeBSD's portscout.
+	Started in 2014, port available since September 5, 2014.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      Kernel-assisted lazy-binding for W^X safety in multi-threaded programs.
+	A new syscall kbind(2)
+	permits lazy-binding to be W^X safe in multi-threaded programs.
+	Implemented for OpenBSD 5.9 by Philip Guenther in July 2015.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.9"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd59.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>pledge(2)</h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      
+	Theo de Raadt, July 19, 2015, OpenBSD 5.9
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>getpwnam_shadow(3),
+	getpwuid_shadow(3)</h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      
+	Ted Unangst and Theo de Raadt, November 18, 2015, OpenBSD 5.9
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>file(1)</h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      
+	Rewritten from scratch and maintained by Nicholas Marriott.
+	Imported April 24, 2015 and first released with OpenBSD 5.8.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 5.8"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd58.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>doas(1)</h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      
+	Written and maintained by Ted Unangst.
+	Imported July 16, 2015 and first released with OpenBSD 5.8.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>radiusd(8)</h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      
+	Written and maintained by YASUOKA Masahiko.
+	Imported July 21, 2015 and first released with OpenBSD 5.8.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>eigrpd(8),
+	eigrpctl(8)</h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      
+	Written and maintained by Renato Westphal.
+	Imported October 2, 2015 and first released with OpenBSD 5.9.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>vmm(4),
+	vmd(8),
+	vmctl(8)</h2><time class="date" datetime="2015-01-01T00:00:00Z">2015</time>    <p>
+      
+	Written by Mike Larkin and Reyk Flöter.
+	Imported November 13, 2015 and first released with OpenBSD 5.9.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>SROP
+	(sigreturn(2)
+	oriented programming) mitigation</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+       attacks researched by
+	Eric Bosman
+	and Herbert Bos in 2014, solution implemented by Theo de Raadt in May 2016,
+	enabled by default since OpenBSD 6.0.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.0"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd60.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Library order randomization</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	In rc(8), re-link
+	libc.so, libcrypto, and ld.so
+	on startup, placing the objects in a random order.
+	Theo de Raadt and Robert Peichaer, May 2016,
+	enabled by default since OpenBSD 6.0 and 6.2.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      Process layouts in memory tightened to remove execute permission from
+	all segmented, non-instruction data and to remove write permission from
+	data that is only modified during loading and relocation.
+	By combining the RELRO (Read-Only after Relocation) design from the
+	GNU project with the original ASLR work from OpenBSD 3.3 and
+	strict lazy-binding work from OpenBSD 5.9, this is applied to not
+	just a subset of programs and libraries but rather to all programs
+	and libraries.
+	Implemented for OpenBSD 6.1 by Philip Guenther in August 2016.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      Use of fork+exec in privilege separated programs. The
+	strategy is to give each process a fresh &amp; unique address space for
+	ASLR, stack protector -- as protection against address space discovery attacks.
+	Implemented first by
+	Damien Miller (sshd(8) 2004),
+	Claudio Jeker (bgpd(8), 2015),
+	Eric Faurot (smtpd(8), 2016),
+	Rafael Zalamena (various, 2016), and others.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>pdisk(8)</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Originally written by Eryk Vershen in 1996-1998,
+	rewritten and maintained by Kenneth Westerback since January 11, 2016
+	and first released with OpenBSD 5.9.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>mknod(8)</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Original version from Version 6 AT&amp;T UNIX (1975),
+	last rewritten by Marc Espie on March 5, 2016
+	and first released with OpenBSD 6.0.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>audioctl(1)</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Originally written by Lennart Augustsson in 1997,
+	rewritten and maintained by Alexandre Ratchov since June 21, 2016
+	and first released with OpenBSD 6.0.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>acme-client(1)</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Written by Kristaps Dzonsons, imported August 31, 2016; released
+	with OpenBSD 6.1.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.1"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd61.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>syspatch(8)</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Written and maintained by Antoine Jacoutot.
+	Imported September 5, 2016; released with OpenBSD 6.1.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ping(8)</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Restructured to include IPv6 functionality and maintained by Florian Obser.
+	The separate
+	ping6(8)
+	was superseded on September 17, 2016,
+	and the new, combined version was released with OpenBSD 6.1.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>xenodm(1)</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Cleaned-up fork of
+	xdm(1)
+	maintained by Matthieu Herrb.
+	Imported October 23, 2016; released with OpenBSD 6.1.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>cvs2gitdump</h2><time class="date" datetime="2016-01-01T00:00:00Z">2016</time>    <p>
+      
+	Written and maintained by YASUOKA Masahiko.
+	Started in 2012, port available since August 1, 2016.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>trapsleds</h2><time class="date" datetime="2017-01-01T00:00:00Z">2017</time>    <p>
+      
+	Reduction of incidental NOP instructions/sequences in the instruction
+	stream which could be useful potentially for ROP attack methods to
+	innaccurately target gadgets. These NOP sequences are converted into
+	trap sequences where possible. Todd Mortimer and Theo de Raadt, June
+	2017.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Kernel relinking at boot</h2><time class="date" datetime="2017-01-01T00:00:00Z">2017</time>    <p>
+      
+	the .o files of the kernel are relinked in random order from a
+	link-kit, before every reboot. This provides substantial interior
+	randomization in the kernel's text and data segments for layout and
+	relative branches/calls.  Basically a unique address space for each
+	kernel boot, similar to the userland fork+exec model described above
+	but for the kernel.  Theo de Raadt, June 2017.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Rearranged i386/amd64 register allocator order in
+	clang(1)
+	to reduce polymorphic RET instructions</h2><time class="date" datetime="2017-01-01T00:00:00Z">2017</time>    <p>
+      
+	Todd Mortimer, November 20, 2017.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>recallocarray(3)</h2><time class="date" datetime="2017-01-01T00:00:00Z">2017</time>    <p>
+      
+	Otto Moerbeek, Joel Sing and Theo de Raadt, March 6, 2017, OpenBSD 6.1
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>freezero(3)</h2><time class="date" datetime="2017-01-01T00:00:00Z">2017</time>    <p>
+      
+	Otto Moerbeek, April 10, 2017, OpenBSD 6.2
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.2"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd62.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ocspcheck(8)</h2><time class="date" datetime="2017-01-01T00:00:00Z">2017</time>    <p>
+      
+	Written and maintained by Bob Beck.
+	Imported January 24, 2017; released with OpenBSD 6.1.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>slaacd(8)</h2><time class="date" datetime="2017-01-01T00:00:00Z">2017</time>    <p>
+      
+	Written and maintained by Florian Obser.
+	Imported March 18, 2017; released with OpenBSD 6.2.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2018-01-01T00:00:00Z">2018</time>    <p>
+      Reencoding of i386/amd64 instruction sequences to avoid
+	embedded polymorphic RET instructions.  Enhancements to
+	clang(1)
+	Todd Mortimer, April 28, 2018 and onwards.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2018-01-01T00:00:00Z">2018</time>    <p>
+      MAP_STACK addition to
+	mmap(2)
+	allows opportunistic verification that the stack-register
+	points at stack memory, therefore catching pivots to non-stack
+	memory (sometimes used in ROP attacks).
+	Theo de Raadt, April 12, 2018.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2>    <p>
+      RETGUARD is a replacement for the stack-protector
+	which uses a per-function random cookie (located in the read-only ELF
+	.openbsd.randomdata section) to consistency-check the
+	return address on the stack.  Implemented for amd64 and arm64
+	by Todd Mortimer in OpenBSD 6.4, for mips64 in OpenBSD 6.7, and
+	powerpc/powerpc64 in OpenBSD 6.9.  amd64 system call stubs also
+	protected in OpenBSD 7.3.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.4"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd64.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>unveil(2)</h2><time class="date" datetime="2018-01-01T00:00:00Z">2018</time>    <p>
+      
+	Theo de Raadt and Bob Beck, July 13, 2018, OpenBSD 6.4
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>rad(8)</h2><time class="date" datetime="2018-01-01T00:00:00Z">2018</time>    <p>
+      
+	Written and maintained by Florian Obser.
+	Imported July 10, 2018; released with OpenBSD 6.4.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      MAP_CONCEAL addition to
+	mmap(2)
+	disallows memory pages to be written to core dumps, preventing
+	accidental exposure of private information.
+	Theo de Raadt, Mark Kettenis and Scott Soule Cheloha,
+	February 2, 2019.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      Similar to the opportunistic verification in MAP_STACK,
+	system-calls can no longer be performed from PROT_WRITE memory.
+	Theo de Raadt, June 2, 2019.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      System calls may only be performed from selected code regions
+        (main program, ld.so, libc.so, and sigtramp).
+	Theo de Raadt, November 28, 2019.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>malloc_conceal(3)
+	and
+	calloc_conceal(3)</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+	Otto Moerbeek, May 10, 2019, OpenBSD 6.5
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.5"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd65.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>ober</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+        ASN.1 basic encoding rules API, written by Claudio Jeker and
+        Reyk Flöter, maintained by Rob Pierce and Martijn van Duren;
+        started in 2006/07, moved to libutil on May 11, 2019, OpenBSD 6.6
+
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.6"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd66.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>unwind(8)</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+	Written and maintained by Florian Obser.
+	Imported January 23, 2019; released with OpenBSD 6.5.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>openrsync(1)</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+	Written by Kristaps Dzonsons.
+	Imported February 10, 2019; released with OpenBSD 6.5.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>sysupgrade(8)</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+        Written by Christian Weisgerber, Florian Obser, and Theo de Raadt.
+        Imported April 25, 2019; released with OpenBSD 6.6.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>snmp(1)</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+        Written and maintained by Martijn van Duren.
+        Imported August 9, 2019; released with OpenBSD 6.6.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>rpki-client(8)</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+        Written by Kristaps Dzonsons, maintained by Claudio Jeker.
+        Imported June 17, 2019; released with OpenBSD 6.7.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.7"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd67.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>Game of Trees</h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
+      
+	Written and maintained by Stefan Sperling.
+	Started in 2017, port available since August 9, 2019.
+
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>resolvd(8)</h2><time class="date" datetime="2021-01-01T00:00:00Z">2021</time>    <p>
+      
+        Written and maintained by Florian Obser and Theo de Raadt.
+        Imported February 24, 2021; released with OpenBSD 6.9.
+    
+    </p><div class="timeline-image">
+  <img
+    alt="OpenBSD 6.9"
+    data-entity-type="file"
+    data-entity-uuid="ec067012-1070-4e32-a49a-092cab7e8fcc"
+    src="assets/img/obsd69.gif"
+    class="align-center"
+    width="300"
+    height="240"
+    loading="lazy"
+  />
+</div>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2>dhcpleased(8)</h2><time class="date" datetime="2021-01-01T00:00:00Z">2021</time>    <p>
+      
+        Written and maintained by Florian Obser.
+        Imported February 26, 2021; released with OpenBSD 6.9.
+
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2022-01-01T00:00:00Z">2022</time>    <p>
+      Permissions (RWX, MAP_STACK, etc) on address space regions can be
+	made immutable, so that mmap(2),
+	mprotect(2) or
+	munmap(2) fail with
+	EPERM. Most of the program static address space is now automatically
+	immutable (main program, ld.so, main stack, load-time shared libraries,
+	and dlopen()'d libraries mapped without RTLD_NODELETE).  Programmers
+	can request non-immutable static data using the "openbsd.mutable" section,
+	or manually bring immutability to (page aligned heap objects) using
+	mimmutable(2).
+	Theo de Raadt, Dec 4, 2022.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2023-01-01T00:00:00Z">2023</time>    <p>
+      sshd random relinking at boot. Theo de Raadt. Jan 18, 2023.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2023-01-01T00:00:00Z">2023</time>    <p>
+      Some architectures now have non-readable code ("xonly"), both from
+	the perspective of userland reading its own memory, or the kernel
+	trying to read memory in a system call.  Many sloppy practices in
+	userland code had to be repaired to allow this.  The linker option
+	--execute-only is enabled by default. In order of
+	development: arm64, riscv64, hppa, sparc64 (sun4u only), amd64,
+	powerpc64, powerpc (G5 only), octeon.
+	Mark Kettenis, Theo de Raadt, Visa Hankala, Miod Vallat,
+	Dave Voutila, George Koehler in kernel and base, and
+	Theo Buehler, Robert Nagy, Christian Weisgerber in ports.
+	Dec 2022 - Feb 2023, still ongoing.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2023-01-01T00:00:00Z">2023</time>    <p>
+      On all architectures which lack hardware-enforcement of xonly,
+	system calls are now prevented from reading (via copyin/copyinst)
+	inside the program's main text, ld.so text, sigtramp text, or
+	libc.so text.
+	Theo de Raadt, Jan 2023.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2023-01-01T00:00:00Z">2023</time>    <p>
+      Architectures which lack xonly mmu-enforcement can still benefit
+	from switching to --execute-only binaries if the cpu generates
+	different traps for instruction-fetch versus data-fetch.  The
+	VM system will not allow memory to be read before it was
+	executed which is valuable together with library relinking.
+	Architectures switched over include sparc64 (sun4v), loongson.
+	Theo de Raadt, Feb 2023.
+
+    </p>    <p>&nbsp;</p>
+  </div>
+</div>      </div>
+    </section>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://openbsd-innovations.ctors.net">
+          <img
+            src="./assets/puffy1.gif"
+            alt="Logo"
+            width="30"
+            height="26"
+            class="d-inline-block align-text-top"
+          />
+          OpenBSD innovations timeline
+        </a>
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <li class="nav-item col-6 col-lg-auto">
+            <a
+              class="nav-link py-2 px-0 px-lg-2"
+              href="https://github.com/tvlooy/openbsd-innovations"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                class="navbar-nav-svg"
+                viewBox="0 0 512 499.36"
+                role="img"
+              >
+                <title>GitHub</title>
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script src="asserts/animate.js"></script>
+  </body>
+</html>
