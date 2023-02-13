@@ -14,10 +14,18 @@ $timeline = [];
 $prevYear = 1996;
 foreach ($dom->getElementsByTagName('ul') as $ul) {
     foreach ($ul->getElementsByTagName('li') as $li) {
-        $element = strip_tags($li->ownerDocument->saveHTML($li), 'li');
+        $element = $li->ownerDocument->saveHTML($li);
+        $element = str_replace(['<li>', '</li>'], '', $element);
+        $element = str_replace('://', 'slashslash', $element);
+        
         [$title, $body] = explode(':', $element.':', 2);
-
-        if (strlen($title) > 100) {
+        $title = str_replace('slashslash', '://', $title);
+        $title = str_replace('href="', 'href="https://openbsd.org/', $title);
+        $title = str_replace('https://openbsd.org/http', 'http', $title);
+        $body = str_replace('slashslash', '://', $body);
+        $body = str_replace('href="', 'href="https://openbsd.org/', $body);
+        $body = str_replace('https://openbsd.org/http', 'http', $body);
+        if (strlen(strip_tags($title)) > 100) {
             $body = $title.':'.$body;
             $title = '';
         }
