@@ -284,9 +284,9 @@
     <h2><strong>Stack protector</strong></h2><time class="date" datetime="2001-01-01T00:00:00Z">2001</time>    <p>
       
 	Developed since 2001 as "propolice" by Hiroaki Etoh. Integrated, and
-	implemented for additional hardware platforms, by Miod Vallat and Theo
-	de Raadt.  OpenBSD 3.3 was the first operating system to enable it
-	systemwide by default.
+	implemented for additional hardware platforms, by Federico G. Schwindt,
+	Miod Vallat and Theo de Raadt.  OpenBSD 3.3 was the first operating
+	system to enable it systemwide by default.
     
     </p><div class="timeline-image">
   <img
@@ -1926,8 +1926,9 @@
 	trying to read memory in a system call.  Many sloppy practices in
 	userland code had to be repaired to allow this.  The linker option
 	<b>--execute-only</b> is enabled by default. In order of
-	development: arm64, riscv64, hppa, sparc64 (sun4u only), amd64,
+	development: arm64, riscv64, hppa, amd64,
 	powerpc64, powerpc (G5 only), octeon.
+	sparc64 (sun4u only) unfinished.
 	Mark Kettenis, Theo de Raadt, Visa Hankala, Miod Vallat,
 	Dave Voutila, George Koehler in kernel and base, and
 	Theo Buehler, Robert Nagy, Christian Weisgerber in ports.
@@ -1956,6 +1957,15 @@
 	executed which is valuable together with library relinking.
 	Architectures switched over include sparc64 (sun4v), loongson.
 	Theo de Raadt, Feb 2023.
+    
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
+    <h2></h2><time class="date" datetime="2023-01-01T00:00:00Z">2023</time>    <p>
+      ld.so and crt0 register the location of the execve(2) stub with
+	the kernel using pinsyscall(2), after which the kernel only accepts
+	an execve call from that specific location. Theo de Raadt, Feb 2023.
 
     </p>    <p>&nbsp;</p>
   </div>
