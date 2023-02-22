@@ -59,8 +59,8 @@ ksort($timeline, SORT_NUMERIC);
 
 $releases = [];
 
-foreach ($timeline as $year) {
-    foreach ($year as $el) {
+foreach (array_reverse($timeline) as $year) {
+    foreach (array_reverse($year) as $el) {
         $year = $el['year'];
         $title = $el['title'];
         $body = $el['body'];
