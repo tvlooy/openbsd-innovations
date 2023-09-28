@@ -68,11 +68,20 @@
       <div class="timeline container" id="timeline">
 <div class="timeline-item animate">
   <div class="timeline-content">
+    <h2></h2>    <p>
+      Mandatory enforcement of indirect branch targets (BTI on arm64,
+        IBT on Intel amd64), unless a linker flag (-Wl,-z,nobtcfi) requests
+        no enforcement.
+
+    </p>    <p>&nbsp;</p>
+  </div>
+</div><div class="timeline-item animate">
+  <div class="timeline-content">
     <h2></h2><time class="date" datetime="2023-01-01T00:00:00Z">2023</time>    <p>
       ld.so and crt0 register the location of the execve(2) stub with
 	the kernel using pinsyscall(2), after which the kernel only accepts
 	an execve call from that specific location. Theo de Raadt, Feb 2023.
-
+    
     </p>    <p>&nbsp;</p>
   </div>
 </div><div class="timeline-item animate">
@@ -183,7 +192,8 @@
   <div class="timeline-content">
     <h2><a href="https://man.openbsd.org/rpki-client.8">rpki-client(8)</a></h2><time class="date" datetime="2019-01-01T00:00:00Z">2019</time>    <p>
       
-        Written by Kristaps Dzonsons, maintained by Claudio Jeker.
+        Written by Kristaps Dzonsons; maintained by Claudio Jeker,
+        Theo Buehler, and Job Snijders.
         Imported June 17, 2019; released with OpenBSD 6.7.
     
     </p><div class="timeline-image">
