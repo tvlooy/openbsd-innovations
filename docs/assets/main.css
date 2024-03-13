@@ -124,7 +124,7 @@ section {
   position: relative;
   width: 45%;
   padding: 10px 30px;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #f5f5f5;
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
 }
@@ -189,6 +189,8 @@ section {
   position: absolute;
   top: 0px;
   right: 0px;
+  margin: 7px 10px;
+  border-radius: 10px;
 }
 
 .timeline-item:nth-child(odd).animate .timeline-content {
